@@ -1,14 +1,19 @@
+#
+# Conditional build:
+%bcond_without	jack	# without JACK support
+#
 Summary:	ecamegapedal - a realtime effect processor
 Summary(pl):	ecamegapedal - procesor efektów dzia³aj±cy w czasie rzeczywistym
 Name:		ecamegapedal
-Version:	0.4.2
+Version:	0.4.3
 Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://ecasound.seul.org/download/%{name}-%{version}.tar.gz
-# Source0-md5:	ca66d62d26dd00ab0bb3e2cbd0e8796f
+# Source0-md5:	b8f43b78b4d9054fa104a6e603629930
 URL:		http://www.eca.cx/ecasound/
 BuildRequires:	ecasound-devel >= 2.2.0
+%{?with_jack:BuildRequires:	jack-audio-connection-kit-devel}
 BuildRequires:	qt-devel
 Requires:	ecasound >= 2.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -39,9 +44,8 @@ multi-operator.
 %setup -q
 
 %build
-%configure2_13
-#	--disable-static
-# --enable-jack
+%configure2_13 \
+	%{!?with_jack:--disable-jack}
 
 %{__make}
 
