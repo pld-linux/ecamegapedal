@@ -6,12 +6,14 @@ Summary:	ecamegapedal - a realtime effect processor
 Summary(pl):	ecamegapedal - procesor efektów dzia³aj±cy w czasie rzeczywistym
 Name:		ecamegapedal
 Version:	0.4.3
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://ecasound.seul.org/download/%{name}-%{version}.tar.gz
 # Source0-md5:	b8f43b78b4d9054fa104a6e603629930
 URL:		http://www.eca.cx/ecasound/
+BuildRequires:	automake
+BuildRequires:	autoconf
 BuildRequires:	ecasound-devel >= 2.2.0
 %{?with_jack:BuildRequires:	jack-audio-connection-kit-devel}
 BuildRequires:	qt-devel
@@ -44,7 +46,12 @@ multi-operator.
 %setup -q
 
 %build
-%configure2_13 \
+%{__aclocal}
+%{__automake}
+%{__autoconf}
+%configure \
+	--with-qt-libraries=/usr/%{_lib} \
+	--with-qt-includes=%{_includedir}/qt
 	%{!?with_jack:--disable-jack}
 
 %{__make} \
