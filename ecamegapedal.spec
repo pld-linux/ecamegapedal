@@ -12,11 +12,15 @@ Group:		X11/Applications/Sound
 Source0:	http://ecasound.seul.org/download/%{name}-%{version}.tar.gz
 # Source0-md5:	35ae90b8b01e163d4ec0d6c824fbb8c6
 URL:		http://www.eca.cx/ecasound/
+BuildRequires:	alsa-lib-devel
 BuildRequires:	automake
 BuildRequires:	autoconf
 BuildRequires:	ecasound-devel >= 2.2.0
 %{?with_jack:BuildRequires:	jack-audio-connection-kit-devel}
+BuildRequires:	libsndfile-devel
+BuildRequires:	libtool
 BuildRequires:	qt-devel
+BuildRequires:	readline-devel
 Requires:	ecasound >= 2.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
