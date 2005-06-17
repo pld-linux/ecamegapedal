@@ -47,6 +47,7 @@ multi-operator.
 %setup -q
 
 %build
+%{__libtoolize}
 %{__aclocal}
 %{__automake}
 %{__autoconf}
