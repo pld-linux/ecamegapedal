@@ -3,7 +3,7 @@
 %bcond_without	jack	# without JACK support
 #
 Summary:	ecamegapedal - a realtime effect processor
-Summary(pl):	ecamegapedal - procesor efektów dzia³aj±cy w czasie rzeczywistym
+Summary(pl.UTF-8):   ecamegapedal - procesor efektÃ³w dziaÅ‚ajÄ…cy w czasie rzeczywistym
 Name:		ecamegapedal
 Version:	0.4.4
 Release:	1
@@ -31,16 +31,16 @@ supported. This includes JACK, ALSA, OSS, aRts audio I/O (depending on
 ecasound build options), over 20 file formats, over 30 effect types,
 LADSPA plugins and multi-operator effect presets.
 
-%description -l pl
-ecamegapedal to dzia³aj±cy w czasie rzeczywistym procesor efektów
-zbudowany w oparciu o pakiety ecasound i Qt. Mo¿e byæ u¿ywany jako
-wirtualny efekt gitarowy lub studyjne urz±dzenie do efektów. Oprócz
-dzia³ania w czasie rzeczywistym ecamegapedal obs³uguje tak¿e odczyt z
-i zapis do plików d¼wiêkowych. Obs³ugiwane s± wszystkie formaty plików
-d¼wiêkowych i algorytmy efektów dostarczone przez biblioteki ecasound.
-Obejmuje to wej¶cie/wyj¶cie d¼wiêku JACK, ALSA, OSS i aRts (zale¿nie
-od opcji, z jakimi by³o zbudowane ecasound), ponad 20 formatów plików,
-ponad 30 typów efektów, wtyczki LADSPA oraz ustawienia efektu
+%description -l pl.UTF-8
+ecamegapedal to dziaÅ‚ajÄ…cy w czasie rzeczywistym procesor efektÃ³w
+zbudowany w oparciu o pakiety ecasound i Qt. MoÅ¼e byÄ‡ uÅ¼ywany jako
+wirtualny efekt gitarowy lub studyjne urzÄ…dzenie do efektÃ³w. OprÃ³cz
+dziaÅ‚ania w czasie rzeczywistym ecamegapedal obsÅ‚uguje takÅ¼e odczyt z
+i zapis do plikÃ³w dÅºwiÄ™kowych. ObsÅ‚ugiwane sÄ… wszystkie formaty plikÃ³w
+dÅºwiÄ™kowych i algorytmy efektÃ³w dostarczone przez biblioteki ecasound.
+Obejmuje to wejÅ›cie/wyjÅ›cie dÅºwiÄ™ku JACK, ALSA, OSS i aRts (zaleÅ¼nie
+od opcji, z jakimi byÅ‚o zbudowane ecasound), ponad 20 formatÃ³w plikÃ³w,
+ponad 30 typÃ³w efektÃ³w, wtyczki LADSPA oraz ustawienia efektu
 multi-operator.
 
 %prep
