@@ -3,7 +3,7 @@
 %bcond_without	jack	# without JACK support
 #
 Summary:	ecamegapedal - a realtime effect processor
-Summary(pl.UTF-8):   ecamegapedal - procesor efektów działający w czasie rzeczywistym
+Summary(pl.UTF-8):	ecamegapedal - procesor efektów działający w czasie rzeczywistym
 Name:		ecamegapedal
 Version:	0.4.4
 Release:	1
