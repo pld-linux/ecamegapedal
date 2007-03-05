@@ -6,7 +6,7 @@ Summary:	ecamegapedal - a realtime effect processor
 Summary(pl):	ecamegapedal - procesor efektów dzia³aj±cy w czasie rzeczywistym
 Name:		ecamegapedal
 Version:	0.4.4
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://ecasound.seul.org/download/%{name}-%{version}.tar.gz
